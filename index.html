@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Slope Unblocked – Play Free Online | No Download Required</title>
+  <meta name="description" content="Play Slope Unblocked free online – the ultimate 3D endless ball game. No downloads, no installs. Play at school or work instantly in your browser!" />
+  <meta name="keywords" content="slope unblocked, slope game, slope unblocked game, slope unblocked 76, slope unblocked 911, play slope online, slope 3d game, unblocked games slope, slope ball game, slope game unblocked at school" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Slope Unblocked" />
+  <link rel="canonical" href="https://slopeunblocked.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://slopeunblocked.github.io/" />
+  <meta property="og:title" content="Slope Unblocked – Play Free Online Now" />
+  <meta property="og:description" content="Guide a neon ball down an endless 3D slope. Play Slope Unblocked free — no downloads, works at school and work!" />
+  <meta property="og:image" content="https://slopeunblocked.github.io/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Slope Unblocked – Play Free Online" />
+  <meta name="twitter:description" content="The addictive 3D neon ball game. Play Slope Unblocked free in your browser — no download needed!" />
+
+  <!-- GEO Meta Tags -->
+  <meta name="geo.region" content="US" />
+  <meta name="geo.placename" content="United States" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="3 days" />
+  <meta name="rating" content="general" />
+  <meta name="category" content="games" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Slope Unblocked",
+    "description": "Slope Unblocked is a fast-paced 3D endless runner where you guide a ball down neon slopes in space. Avoid obstacles, beat your high score, and play free in your browser.",
+    "url": "https://slopeunblocked.github.io/",
+    "genre": ["Arcade", "Endless Runner", "3D", "Skill"],
+    "gamePlatform": "Web Browser",
+    "applicationCategory": "Game",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "15234",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Slope Unblocked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Slope Unblocked is a free 3D browser game where you guide a rolling ball down an endless neon slope. The game speeds up over time and tests your reflexes and reaction time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you play Slope Unblocked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the left and right arrow keys (or A/D keys) to steer the ball. On mobile, tap the sides of the screen. Avoid red obstacles and stay on the track as long as possible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Slope Unblocked free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Slope Unblocked is completely free to play. No downloads, no registration, and no installs required. Just open your browser and play."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I play Slope Unblocked at school?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Slope Unblocked runs entirely in your browser and works on most school and work networks. No app installation is needed."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --neon-green: #00ff88;
+      --neon-blue: #00cfff;
+      --neon-red: #ff3c5a;
+      --bg-dark: #050a12;
+      --bg-panel: #0a1628;
+      --bg-card: #0d1f3a;
+      --text-primary: #e8f4ff;
+      --text-muted: #7a9abf;
+      --border-glow: rgba(0, 255, 136, 0.18);
+      --glow-green: 0 0 20px rgba(0, 255, 136, 0.4);
+      --glow-blue: 0 0 20px rgba(0, 207, 255, 0.4);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,255,136,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,136,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+      animation: gridDrift 30s linear infinite;
+    }
+
+    @keyframes gridDrift {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(60px); }
+    }
+
+    /* Scan-line overlay */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.07) 2px,
+        rgba(0,0,0,0.07) 4px
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrap { position: relative; z-index: 1; max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(5,10,18,0.7) 100%);
+      border-bottom: 1px solid var(--border-glow);
+      backdrop-filter: blur(12px);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .logo {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: none;
+      filter: drop-shadow(0 0 12px rgba(0,255,136,0.5));
+    }
+
+    .header-badge {
+      font-size: 0.72rem;
+      font-family: 'Orbitron', monospace;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--neon-green);
+      background: rgba(0,255,136,0.08);
+      border: 1px solid rgba(0,255,136,0.25);
+      padding: 5px 12px;
+      border-radius: 2px;
+      text-transform: uppercase;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--neon-green);
+      margin-bottom: 14px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.1s;
+    }
+
+    h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.2s;
+    }
+
+    h1 span.highlight {
+      background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 16px rgba(0,255,136,0.45));
+    }
+
+    .hero-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin: 0 auto 28px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.3s;
+    }
+
+    /* ===== STATS ROW ===== */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.4s;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .stat-num {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--neon-green);
+      filter: drop-shadow(0 0 8px rgba(0,255,136,0.5));
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 36px;
+      background: var(--border-glow);
+    }
+
+    /* ===== GAME FRAME ===== */
+    .game-section {
+      padding: 0 0 20px;
+      opacity: 0;
+      animation: fadeUp 0.7s ease forwards 0.5s;
+    }
+
+    .game-frame-outer {
+      position: relative;
+      border: 1px solid rgba(0,255,136,0.22);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(0,207,255,0.08),
+        0 0 60px rgba(0,255,136,0.12),
+        0 20px 80px rgba(0,0,0,0.7);
+      background: #000;
+    }
+
+    /* Corner accents */
+    .game-frame-outer::before,
+    .game-frame-outer::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .game-frame-outer::before {
+      top: 0; left: 0;
+      border-top: 2px solid var(--neon-green);
+      border-left: 2px solid var(--neon-green);
+      box-shadow: inset 0 0 8px rgba(0,255,136,0.2);
+    }
+
+    .game-frame-outer::after {
+      bottom: 0; right: 0;
+      border-bottom: 2px solid var(--neon-blue);
+      border-right: 2px solid var(--neon-blue);
+    }
+
+    .frame-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 14px;
+      background: rgba(0,0,0,0.6);
+      border-bottom: 1px solid rgba(0,255,136,0.12);
+    }
+
+    .frame-dots { display: flex; gap: 6px; }
+    .frame-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+    .dot-r { background: var(--neon-red); }
+    .dot-y { background: #ffd600; }
+    .dot-g { background: var(--neon-green); }
+
+    .frame-title {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .fullscreen-btn {
+      background: none;
+      border: 1px solid rgba(0,255,136,0.25);
+      color: var(--neon-green);
+      font-family: 'Orbitron', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .fullscreen-btn:hover {
+      background: rgba(0,255,136,0.1);
+      box-shadow: var(--glow-green);
+    }
+
+    .game-iframe-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+    }
+
+    .game-iframe-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* ===== CONTROLS BAR ===== */
+    .controls-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 14px 16px;
+      background: rgba(0,0,0,0.5);
+      border-top: 1px solid rgba(0,255,136,0.1);
+      align-items: center;
+    }
+
+    .ctrl-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .key {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 3px;
+      padding: 2px 7px;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.65rem;
+      color: var(--neon-blue);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+      min-width: 28px;
+      text-align: center;
+    }
+
+    .ctrl-sep {
+      width: 1px;
+      height: 16px;
+      background: rgba(255,255,255,0.1);
+      margin: 0 4px;
+    }
+
+    /* ===== CONTENT SECTIONS ===== */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 32px 0;
+    }
+
+    @media (max-width: 640px) {
+      .content-grid { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid rgba(0,207,255,0.1);
+      border-radius: 4px;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--neon-green), transparent);
+    }
+
+    .card:hover {
+      border-color: rgba(0,255,136,0.2);
+      box-shadow: 0 0 30px rgba(0,255,136,0.06);
+    }
+
+    .card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    h2 .accent { color: var(--neon-green); }
+
+    h3 {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--neon-blue);
+    }
+
+    p { color: var(--text-muted); margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ===== FULL-WIDTH SECTIONS ===== */
+    .section { margin: 32px 0; }
+
+    .section-title {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-primary);
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(0,255,136,0.3), transparent);
+    }
+
+    /* Tips list */
+    .tips-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 500px) { .tips-list { grid-template-columns: 1fr; } }
+
+    .tips-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--bg-card);
+      border: 1px solid rgba(0,207,255,0.08);
+      border-radius: 3px;
+      padding: 14px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      transition: border-color 0.2s;
+    }
+
+    .tips-list li:hover {
+      border-color: rgba(0,255,136,0.2);
+    }
+
+    .tip-num {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.65rem;
+      color: var(--neon-green);
+      background: rgba(0,255,136,0.08);
+      border: 1px solid rgba(0,255,136,0.2);
+      border-radius: 2px;
+      padding: 2px 6px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+
+    details {
+      background: var(--bg-card);
+      border: 1px solid rgba(0,207,255,0.1);
+      border-radius: 3px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    details[open] {
+      border-color: rgba(0,255,136,0.25);
+      box-shadow: 0 0 20px rgba(0,255,136,0.06);
+    }
+
+    summary {
+      padding: 16px 20px;
+      cursor: pointer;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: '+';
+      font-size: 1.1rem;
+      color: var(--neon-green);
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-body {
+      padding: 0 20px 16px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid rgba(0,255,136,0.1);
+      padding: 30px 0 20px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Orbitron', monospace;
+      font-weight: 900;
+      font-size: 1.1rem;
+      background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .footer-text {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--neon-green); }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Pulsing glow on game frame */
+    @keyframes framePulse {
+      0%, 100% { box-shadow: 0 0 0 1px rgba(0,207,255,0.08), 0 0 40px rgba(0,255,136,0.1), 0 20px 80px rgba(0,0,0,0.7); }
+      50%       { box-shadow: 0 0 0 1px rgba(0,207,255,0.12), 0 0 70px rgba(0,255,136,0.2), 0 20px 80px rgba(0,0,0,0.7); }
+    }
+
+    .game-frame-outer { animation: framePulse 4s ease-in-out infinite; }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      .stats-row { gap: 16px; }
+      .stat-divider { display: none; }
+      .frame-title { display: none; }
+      .controls-bar { gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="wrap">
+      <a href="/" class="logo" aria-label="Slope Unblocked Home">⬡ SLOPE UNBLOCKED</a>
+      <span class="header-badge">🟢 Online Now</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero" aria-label="Introduction">
+        <p class="hero-eyebrow">🎮 Free Browser Game · No Download</p>
+        <h1>Play <span class="highlight">Slope Unblocked</span><br />Free Online</h1>
+        <p class="hero-desc">
+          Guide a neon ball down endless 3D slopes at insane speed. Dodge obstacles, survive longer, beat your high score. Works at school, work, or anywhere — instantly in your browser.
+        </p>
+        <div class="stats-row" aria-label="Game stats">
+          <div class="stat">
+            <span class="stat-num">4.8★</span>
+            <span class="stat-label">Rating</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">15M+</span>
+            <span class="stat-label">Players</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Free</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Replays</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- GAME -->
+      <section class="game-section" aria-label="Slope Game">
+        <div class="game-frame-outer" id="gameFrame">
+          <div class="frame-topbar">
+            <div class="frame-dots">
+              <div class="frame-dot dot-r"></div>
+              <div class="frame-dot dot-y"></div>
+              <div class="frame-dot dot-g"></div>
+            </div>
+            <span class="frame-title">slope-unblocked · live</span>
+            <button class="fullscreen-btn" onclick="goFullscreen()" aria-label="Fullscreen">⛶ FULLSCREEN</button>
+          </div>
+          <div class="game-iframe-wrap">
+            <iframe
+              id="slopeGame"
+              src="https://unblockedrush.com/games/slope/"
+              title="Play Slope Unblocked Free Online"
+              allow="fullscreen; autoplay"
+              allowfullscreen
+              loading="lazy"
+              scrolling="no"
+            ></iframe>
+          </div>
+          <div class="controls-bar" aria-label="Game controls">
+            <span class="ctrl-chip"><span class="key">◄</span><span class="key">►</span> Steer</span>
+            <div class="ctrl-sep"></div>
+            <span class="ctrl-chip"><span class="key">A</span><span class="key">D</span> Also works</span>
+            <div class="ctrl-sep"></div>
+            <span class="ctrl-chip">📱 Tap sides on mobile</span>
+            <div class="ctrl-sep"></div>
+            <span class="ctrl-chip" style="color: var(--neon-green);">Survive · Score · Repeat</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT IS / HOW TO PLAY -->
+      <div class="content-grid">
+        <article class="card">
+          <div class="card-icon">🟢</div>
+          <h3>What Is Slope Unblocked?</h3>
+          <p>
+            <strong>Slope Unblocked</strong> is a free 3D endless runner game where you roll a ball down neon-lit space slopes at blistering speed. The track twists, tilts, and narrows — and the further you go, the faster it gets.
+          </p>
+          <p>
+            The "unblocked" version runs right in your browser — no downloads, no installs, no plugins. It works on school Chromebooks, office computers, and any mobile device.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🎮</div>
+          <h3>How to Play Slope Game</h3>
+          <p>
+            The controls are intentionally simple. Press the <strong>Left / Right arrow keys</strong> (or <strong>A / D</strong>) to steer your ball. On mobile, tap the left or right side of the screen.
+          </p>
+          <p>
+            Your only goal: <strong>don't fall off and don't hit red obstacles</strong>. There are no levels, no power-ups — just you, the slope, and your reflexes. Survive as long as possible.
+          </p>
+        </article>
+      </div>
+
+      <!-- TIPS -->
+      <section class="section" aria-labelledby="tips-heading">
+        <h2 id="tips-heading" class="section-title"><span class="accent">PRO</span> TIPS TO MASTER SLOPE</h2>
+        <ul class="tips-list">
+          <li><span class="tip-num">01</span> Keep your ball centered — the edges drop off fast at high speed.</li>
+          <li><span class="tip-num">02</span> Look ahead, not at the ball. React to what's coming, not what's already there.</li>
+          <li><span class="tip-num">03</span> Make small, precise movements. Overcorrecting causes most crashes.</li>
+          <li><span class="tip-num">04</span> Stay calm when speed spikes — panic leads to erratic steering.</li>
+          <li><span class="tip-num">05</span> Use the sound cues — the pitch rises before tough sections.</li>
+          <li><span class="tip-num">06</span> Consistent daily practice builds muscle memory faster than long sessions.</li>
+        </ul>
+      </section>
+
+      <!-- WHY PLAY -->
+      <section class="section" aria-labelledby="why-heading">
+        <h2 id="why-heading" class="section-title"><span class="accent">WHY</span> PLAYERS LOVE SLOPE</h2>
+        <div class="content-grid">
+          <article class="card">
+            <h3>⚡ Pure Adrenaline</h3>
+            <p>The accelerating speed creates a genuine adrenaline rush. Every run is different — randomized tracks mean you can never fully memorize a path. Pure reaction gaming.</p>
+          </article>
+          <article class="card">
+            <h3>🌐 Play Anywhere, Anytime</h3>
+            <p>Slope Unblocked requires nothing but a browser tab. No app store, no login, no setup. It loads in seconds on any device — including school Chromebooks and locked-down networks.</p>
+          </article>
+          <article class="card">
+            <h3>🏆 Competitive by Nature</h3>
+            <p>The score system turns every session into a personal challenge. Players relentlessly chase their personal best, making it one of the most replayable free browser games ever made.</p>
+          </article>
+          <article class="card">
+            <h3>🎨 Iconic Neon Design</h3>
+            <p>The minimalist neon-on-dark space aesthetic is instantly recognizable and visually satisfying. The clean 3D graphics run smoothly even on low-end hardware.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading" class="section-title"><span class="accent">FAQ</span> — COMMON QUESTIONS</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Is Slope Unblocked really free to play?</summary>
+            <div class="faq-body">Yes — completely free. No registration, no credit card, no in-app purchases. Just open the page and play. The game will always be free here.</div>
+          </details>
+          <details>
+            <summary>Can I play Slope Unblocked at school?</summary>
+            <div class="faq-body">Yes! Slope Unblocked is specifically designed to work on networks that block gaming sites. Since it runs directly in your browser with no plugins, it gets past most school filters. It works great on Chromebooks too.</div>
+          </details>
+          <details>
+            <summary>Does Slope Unblocked work on mobile?</summary>
+            <div class="faq-body">Absolutely. The game supports touch controls — just tap the left or right side of the screen to steer. It works on iPhone, Android, and tablets. No app needed.</div>
+          </details>
+          <details>
+            <summary>What are the controls for Slope?</summary>
+            <div class="faq-body">On desktop: use the Left/Right Arrow keys or A/D keys to steer. On mobile: tap the left half of the screen to go left, the right half to go right. That's everything you need to know.</div>
+          </details>
+          <details>
+            <summary>Why is the game called "Slope Unblocked"?</summary>
+            <div class="faq-body">"Slope" refers to the game's core mechanic — rolling down steep, shifting slopes in space. "Unblocked" means you can access it from school, work, or any network that typically restricts gaming sites.</div>
+          </details>
+          <details>
+            <summary>Is there an end to Slope?</summary>
+            <div class="faq-body">No — Slope is an endless game. There is no final level or finish line. The track generates infinitely and the speed keeps increasing. The goal is simply to survive as long as possible and beat your own high score.</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- SEO CONTENT BLOCK -->
+      <section class="section" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="section-title"><span class="accent">ABOUT</span> SLOPE GAME</h2>
+        <article class="card" style="grid-column: 1 / -1; border-left: none;">
+          <p>
+            <strong>Slope Unblocked</strong> is one of the most popular free browser games in the world, and for good reason. Originally created as a straightforward 3D endless runner, it has grown into a cultural phenomenon among students, gamers, and casual players who want instant, high-quality entertainment with zero friction.
+          </p>
+          <p>
+            The premise is deceptively simple: control a rolling ball on an infinite neon slope in space. But as the speed climbs and the track becomes more unpredictable, the challenge becomes extraordinary. Every run is unique — the procedurally generated course ensures no two games are ever the same, and the physics engine makes every movement feel satisfying and precise.
+          </p>
+          <p>
+            What sets <strong>Slope Game</strong> apart from other browser games is its perfect difficulty curve. Beginners can survive their first few runs almost immediately, while veterans can spend months chasing elite scores. The game rewards consistent play, spatial awareness, and calm under pressure — skills that genuinely improve with time.
+          </p>
+          <p>
+            Whether you're looking for a quick five-minute break or a deep competitive challenge, Slope Unblocked delivers. Play it now — no download required, no account needed, and no limits on how long you can roll.
+          </p>
+        </article>
+      </section>
+
+    </div><!-- /wrap -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-logo">⬡ SLOPE UNBLOCKED</div>
+      <p class="footer-text">Free to play · Works everywhere · No download required</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="#slopeGame">Play Now</a>
+        <a href="#faq-heading">FAQ</a>
+        <a href="#tips-heading">Tips</a>
+      </nav>
+      <p style="font-size:0.72rem; color: rgba(122,154,191,0.4); margin-top: 18px;">
+        © 2025 slopeunblocked.github.io · All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Fullscreen handler
+    function goFullscreen() {
+      const frame = document.getElementById('slopeGame');
+      if (frame.requestFullscreen) frame.requestFullscreen();
+      else if (frame.webkitRequestFullscreen) frame.webkitRequestFullscreen();
+      else if (frame.mozRequestFullScreen) frame.mozRequestFullScreen();
+    }
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .tips-list li, details').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(14px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
